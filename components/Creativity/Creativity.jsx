@@ -39,12 +39,12 @@ const Creativity = () => {
                       outline: 'none',
                     }}
                     tabIndex="-1"
-                    preload="none"
+                    preload="auto"
                     autoPlay
                     muted
                     loop
                     playsInline
-                    webkit-playinginline="true"
+                    webkit-playsInline="true"
                     poster=""
                 >
                   <source src={require(`../../public/videos/thirdBlock.webm`)} type="video/webm"/>

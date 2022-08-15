@@ -33,7 +33,7 @@ const HeroItem = ({hero, setHero, img, id, name, text, video, slider}) => {
                       outline: 'none',
                     }}
                     tabIndex="-1"
-                    preload="none"
+                    preload="auto"
                     autoPlay
                     muted
                     loop

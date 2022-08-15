@@ -34,10 +34,10 @@ const HeroesSlider = ({heroes}) => {
               swiper.navigation.update()
             }}
         >
-          {heroes.map(({id, name, img, video, text}) => (
+          {heroes.map(({id, name, img, video, text, frontImage}) => (
               <SwiperSlide key={id}>
                 <div className={s.image} onClick={() => setActiveCard(id)}>
-                  <Image quality={100} src={img} width={330} height={390} alt="Heros"/>
+                  <Image quality={100} src={frontImage} width={330} height={390} alt="Heros"/>
                 </div>
                 {/*<div className={s.heroName}>{name}</div>*/}
                 {activeCard &&

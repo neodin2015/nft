@@ -74,13 +74,35 @@ const Kindness = () => {
           >
             <div className={s.mainBlock}>
               <div className={s.dragonImage}>
-                <Image
-                  alt="Dragon"
-                  src="/hero-images/redDragon.webp"
-                  width={393}
-                  height={512}
-                  priority
-                />
+                {/*<Image*/}
+                {/*  alt="Dragon"*/}
+                {/*  src="/hero-images/redDragon.webp"*/}
+                {/*  width={393}*/}
+                {/*  height={512}*/}
+                {/*  priority*/}
+                {/*/>*/}
+                <video
+                    style={{
+                      width: '393px',
+                      height: '512px',
+                      objectFit: 'cover',
+                      borderRadius: '30px',
+                      cursor: 'pointer',
+                      zIndex: -1,
+                      outline: 'none',
+                    }}
+                    tabIndex="-1"
+                    preload="none"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    webkit-playinginline="true"
+                    poster=""
+                >
+                  <source src={require(`../../public/videos/01.webm`)} type="video/webm"/>
+                  Тег video не поддерживается вашим раузером.
+                </video>
               </div>
               <div className={s.dragonAbout}>
                 <h2 className={s.title}>2000 NFTs</h2>

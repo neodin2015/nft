@@ -15,6 +15,7 @@ SwiperCore.use([EffectFade, Pagination, Navigation])
 
 const UpToTheMint = () => {
   const [index, setIndex] = useState(0)
+  const width = useState(null)
   console.log(index)
 
   const swiperNavPrevRef = useRef(null)
@@ -49,14 +50,16 @@ const UpToTheMint = () => {
               <div className={s.upToTheMintContainer}>
                 <motion.div
                     initial={{
-                      opacity: 0
+                      opacity: 0,
+                      rotation:0.02
                     }}
                     viewport={{once: false, amount: 0.5}}
                     whileInView={{
                       opacity: 1,
                       transition: {
                         delay: 0.1,
-                      }
+                      },
+                      rotation:0.02
                     }}
                     className={index === 2 ? s.hidden : s.block}
                 >
@@ -64,14 +67,16 @@ const UpToTheMint = () => {
                 </motion.div>
                 <motion.div
                     initial={{
-                      opacity: 0
+                      opacity: 0,
+                      rotation:0.02
                     }}
                     viewport={{once: false, amount: 0.2}}
                     whileInView={{
                       opacity: 1,
                       transition: {
                         delay: 0.1,
-                      }
+                      },
+                      rotation:0.02
                     }}
                     className={index === 2 ? s.hidden : s.contentNight}
                 >
@@ -100,14 +105,16 @@ const UpToTheMint = () => {
                   </video>}
                   <motion.ul
                       initial={{
-                        opacity: 0
+                        opacity: 0,
+                        rotation:0.02
                       }}
                       viewport={{once: false}}
                       whileInView={{
                         opacity: 1,
                         transition: {
                           delay: index === 1 && 0.5,
-                        }
+                        },
+                      rotation:0.02
                       }}
                       className={index === 2 ? s.hidden : s.contentText}>
                     {rollerData.map(({id, title, text}) => (
@@ -128,14 +135,16 @@ const UpToTheMint = () => {
               <div className={s.upToTheMintContainer}>
                 <motion.div
                     initial={{
-                      opacity: 0
+                      opacity: 0,
+                      rotation:0.02
                     }}
                     viewport={{once: false, amount: 0.5}}
                     whileInView={{
                       opacity: 1,
                       transition: {
                         delay: 0.1,
-                      }
+                      },
+                      rotation:0.02
                     }}
                     className={index === 1 ? s.hidden : s.block}
                 >
@@ -144,14 +153,16 @@ const UpToTheMint = () => {
 
                 <motion.div
                     initial={{
-                      opacity: 0
+                      opacity: 0,
+                      rotation:0.02
                     }}
                     viewport={{once: false, amount: 0.2}}
                     whileInView={{
                       opacity: 1,
                       transition: {
                         delay: 0.1,
-                      }
+                      },
+                      rotatation:0.02
                     }}
                     className={index === 1 ? s.hidden : s.contentDay}
                 >
@@ -167,7 +178,7 @@ const UpToTheMint = () => {
                         outline: 'none',
                       }}
                       tabIndex="-1"
-                      preload="none"
+                      preload="auto"
                       className={s.video}
                       autoPlay
                       muted
