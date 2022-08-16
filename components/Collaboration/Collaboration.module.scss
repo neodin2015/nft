@@ -3,8 +3,8 @@
   background-size: cover;
   //padding: 245px 0;
   width: 100%;
-  // min-height: calc(100vh + 55vh);
-  height: 1200px;
+  min-height: 1495px;
+  height: calc(100vh + 55vh);
   position: relative;
   overflow: hidden;
 
@@ -126,16 +126,52 @@
   //   }  
   // }
   .fairy{
-   
+    width: 40%;
+    height: auto;
     object-fit: cover;
-    top: 100px;
-    right: 0;
+    z-index: 1000;
+    top:2vh;
+    right: 20vw;
   }
-  @media screen and (max-width:768px) {
+  @media screen and(max-width:1315px) {
     .fairy{
-      top: 400px;
-      width: 800px !important;
+      width: 600px;
+      top:20vh;
+    }    
+  }
+  
+  @media screen and(max-width:1045px) {
+    .fairy{
+      top:25vh;
+    }    
+  }
+  @media screen and(max-width:920px) {
+    .fairy{
+      top:30vh;
+    }    
+  }
+
+  @media screen and (max-width:868px) {
+    .fairy{
+      top: 40vh;
+      width: 100% !important;
+      height: auto !important;
+      right: 0 !important;
     }
+  }
+  @media screen and (max-width:660px) {
+    .fairy{
+      top: 50vh;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .collaboration{
+
+      .fairy{
+        top: 420px !important;
+      }
+    }
+    
   }
   .collaborationContainer {
     display: flex;
