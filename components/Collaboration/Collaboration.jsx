@@ -14,11 +14,10 @@ const Collaboration = ({}) => {
           <video
               style={{
                 position: 'absolute',
-                top: 0,
-                left: 0,
-                width: '100%',
-                height: '100%',
-                objectFit: 'cover',
+                bottom: 550,
+                right: 0,
+                width: '70%',
+                height: 'auto',
                 zIndex: 9,
                 outline: 'none',
               }}
