@@ -15,8 +15,6 @@ const Collaboration = ({}) => {
               className={s.fairy}
               style={{
                 position: 'absolute',
-                width: '1200px',
-                height:'auto',
                 zIndex: 9,
                 objectFit:"cover",
                 outline: 'none',
