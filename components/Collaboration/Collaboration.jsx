@@ -15,11 +15,10 @@ const Collaboration = ({}) => {
               className={s.fairy}
               style={{
                 position: 'absolute',
-                top: 250,
-                right: 0,
                 width: '1200px',
-                height: 'auto',
+                height:'auto',
                 zIndex: 9,
+                objectFit:"cover",
                 outline: 'none',
               }}
               tabIndex="-1"
