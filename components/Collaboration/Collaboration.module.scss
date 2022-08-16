@@ -69,6 +69,14 @@
     }
   }
 
+  @media screen and (max-width: 767px) {
+    .fairy{
+      top: unset !important;
+      width: 500px !important;
+      bottom: 30px !important;
+    }  
+  }
+  
 
   .collaborationContainer {
     display: flex;

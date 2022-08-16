@@ -12,11 +12,12 @@ const Collaboration = ({}) => {
       <>
         <section className={s.collaboration}>
           <video
+              className={s.fairy}
               style={{
                 position: 'absolute',
-                bottom: 550,
+                top: 250,
                 right: 0,
-                width: '70%',
+                width: '1200px',
                 height: 'auto',
                 zIndex: 9,
                 outline: 'none',
