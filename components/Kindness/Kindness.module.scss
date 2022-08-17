@@ -171,12 +171,12 @@
     .mainBlock {
       padding: 0 150px;
       display: flex;
+      column-gap: 20px;
       z-index: 8;
       align-items: center;
       width: 100%;
       justify-content: space-between;
       position: relative;
-      bottom: 30px;
 
       .dragonImage {
         width: 50%;
