@@ -20,7 +20,7 @@
     margin-bottom: 50px;
   }
 
-  .utility{
+  .utility {
     color: #fff;
     z-index: 8;
     position: relative;
@@ -181,6 +181,8 @@
       .dragonImage {
         width: 50%;
         max-width: 393px;
+        background: linear-gradient(180deg, rgba(23, 76, 93, 0) 0%, #0B1424 45.34%);
+        border-radius: 50px;
       }
 
       .dragonAbout {
@@ -217,7 +219,8 @@
       width: 100% !important;
 
     }
-    .buttonParticipate{
+
+    .buttonParticipate {
       align-self: center;
     }
   }
@@ -230,7 +233,7 @@
   }
 
   .ellips1,
-  .ellips2{
+  .ellips2 {
     display: none !important;
   }
 
