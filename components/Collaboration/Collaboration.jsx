@@ -11,29 +11,15 @@ const Collaboration = ({}) => {
   return (
       <>
         <section className={s.collaboration}>
-          <video
-              className={s.fairy}
-              style={{
-                position: 'absolute',
-                zIndex: 9,
-                objectFit:"cover",
-                outline: 'none',
-              }}
-              tabIndex="-1"
-              preload="auto"
-              autoPlay
-              muted
-              loop
-              playsInline
-              webkit-playinginline="true"
-              poster=""
-          >
-            <source src={require('../../public/videos/video.webm')} type="video/webm"/>
-            Тег video не поддерживается вашим раузером.
-          </video>
-          {/*<div className={s.ellips1}></div>*/}
-          {/*<div className={s.ellips2}></div>*/}
-          {/*<div className={s.ellips3}></div>*/}
+          <iframe 
+            style={{
+              width:"100%",
+              height:"100%",
+              position:"absolute"
+            }} 
+            height="315" 
+            src={"https://www.youtube.com/embed/8OsV1b8LO6c?controls=0&modestbranding=1&autoplay=1&mute=1"} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"  allowfullscreen></iframe>
+     
           <div className="container">
             <div className={s.collaborationContainer}>
               <motion.a
